@@ -8,6 +8,8 @@ VertexArray::VertexArray()
 VertexArray::~VertexArray()
 {
 	for (auto buffer : _buffers) delete buffer;
+
+	glDeleteVertexArrays(1, &_arrayID);
 }
 
 void VertexArray::bind() const

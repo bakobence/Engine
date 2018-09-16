@@ -125,6 +125,9 @@
     <ClInclude Include="source\graphics\renderer\buffers\indexbuffer.h" />
     <ClInclude Include="source\graphics\renderer\buffers\buffer.h" />
     <ClInclude Include="source\graphics\renderer\buffers\vertexarray.h" />
+    <ClInclude Include="source\graphics\renderer\Renderable2DBase.h" />
+    <ClInclude Include="source\graphics\renderer\Renderer2DBase.h" />
+    <ClInclude Include="source\graphics\renderer\Sprite.h" />
     <ClInclude Include="source\graphics\Shader.h" />
     <ClInclude Include="source\App.h" />
     <ClInclude Include="source\graphics\display\window.h" />
@@ -133,6 +136,9 @@
     <ClCompile Include="source\graphics\renderer\buffers\indexbuffer.cpp" />
     <ClCompile Include="source\graphics\renderer\buffers\buffer.cpp" />
     <ClCompile Include="source\graphics\renderer\buffers\vertexarray.cpp" />
+    <ClCompile Include="source\graphics\renderer\Renderable2DBase.cpp" />
+    <ClCompile Include="source\graphics\renderer\Renderer2DBase.cpp" />
+    <ClCompile Include="source\graphics\renderer\Sprite.cpp" />
     <ClCompile Include="source\graphics\Shader.cpp" />
     <ClCompile Include="source\App.cpp" />
     <ClCompile Include="main.cpp" />

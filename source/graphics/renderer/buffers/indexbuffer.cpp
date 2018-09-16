@@ -11,6 +11,11 @@ IndexBuffer::IndexBuffer(GLushort* data, GLsizei count)
 
 }
 
+IndexBuffer::~IndexBuffer()
+{
+	glDeleteBuffers(1, &_bufferID);
+}
+
 void IndexBuffer::bind() const
 {
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _bufferID);

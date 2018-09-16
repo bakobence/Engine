@@ -1,11 +1,16 @@
 #version 330 core
 
-out vec4 fragColor;
-
 in vec4 vertexColor;
+in vec4 pos;
 
+layout (location = 0) out vec4 color;
+
+
+uniform vec4 colour;
+uniform vec2 light_pos;
 
 void main()
 {
-	fragColor = vertexColor;
+	float intensity = 1.0 / length(pos.xy - light_pos);
+	color = vertexColor * intensity;
 }

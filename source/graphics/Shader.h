@@ -12,17 +12,24 @@
 
 class Shader
 {
+private:
+	GLuint ID;
+	const char * _vertexPath;
+	const char * _fragmentPath;
 public:
-	unsigned int ID;
 
 	Shader(const char* vertexPath, const char* fragmentPath);
+	~Shader();
 	void use();
 
-	void setBool(const std::string &name, bool value) const;
 	void setInt(const std::string &name, int value) const;
 	void setFloat(const std::string &name, float value) const;
 
-	void setV2(std::string const& name, glm::vec2 value) const;
+	void setVec2(std::string const& name, glm::vec2 value) const;
+	void setVec3(std::string const& name, glm::vec3 value) const;
+	void setVec4(std::string const& name, glm::vec4 value) const;
+
+	void setMat4(const std::string &name, glm::mat4 value) const;
 
 
 private:

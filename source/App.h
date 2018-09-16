@@ -11,10 +11,20 @@
 class App
 {
 private:
-	Window _window;
-public:
+	//Instance of the singleton
+	static App* instance;
+	//prevent construction
 	App();
-	~App();
+
+
+	//rest of the members
+	Window _window;
+
+
+public:
+	//getting the instance of the singleton
+	static App* getInstance();
+
 
 	void run();
 

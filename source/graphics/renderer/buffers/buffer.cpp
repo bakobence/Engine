@@ -9,6 +9,10 @@ Buffer::Buffer(GLfloat* data, GLsizei size, GLuint componentCnt)
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
+Buffer::~Buffer()
+{
+	glDeleteBuffers(1, &_bufferID);
+}
 
 void Buffer::bind() const
 {

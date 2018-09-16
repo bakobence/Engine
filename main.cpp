@@ -1,8 +1,10 @@
 #include "source\App.h"
 
+App* App::instance = nullptr;
+
 int main()
 {
-	App appliaction;
-	appliaction.run();
+	App* engine = App::getInstance();
+	engine->run();
 	return(0);
 }

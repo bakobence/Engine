@@ -10,6 +10,7 @@ private:
 	GLsizei	_count; // How many draw calls we have to make
 public:
 	IndexBuffer(GLushort* data, GLsizei count);
+	~IndexBuffer();
 
 	void bind() const;
 	void unbind() const;

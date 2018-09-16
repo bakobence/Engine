@@ -13,6 +13,7 @@ private:
 	GLsizei _size;
 public:
 	Buffer(GLfloat* data, GLsizei size, GLuint componentCnt);
+	~Buffer();
 
 	void bind() const;
 	void unbind() const;
